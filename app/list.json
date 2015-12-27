@@ -1,0 +1,8 @@
+[
+    {"image":"images/audi.jpg", "name":"Audi", "description":"Good Car", "price":15, "quantity":0},
+	{"image":"images/mercides.jpg", "name":"Mercides", "description":"Excellent Car", "price":20, "quantity":0},
+	 {"image":"images/bmw.jpg", "name":"BMW", "description":"Very Good Car", "price":18, "quantity":0},
+	{"image":"images/hundy.jpg", "name":"Hundy", "description":"Good Car", "price":8, "quantity":0}
+	
+    
+]

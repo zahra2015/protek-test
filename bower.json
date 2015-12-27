@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "authors": [
+    "zara <fnkairi@gmail.com>"
+  ],
+  "description": "pro-tek project",
+  "main": "index.htnl",
+  "moduleType": [],
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "font-awsome#~4.5.0",
+    "angular": "angularjs#~1.4.8",
+    "angular-route": "~1.4.8",
+    "bootstrap-social": "~4.11.0"
+  }
+}

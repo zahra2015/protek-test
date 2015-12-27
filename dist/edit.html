@@ -1,0 +1,46 @@
+<div ng-controller="edit">
+<div class="row">
+        
+        <ol class="btn-group ">
+            <li><a href="#home" class="btn btn-primary btn-lg"><strong class="fa fa-home fa-lg "></strong></a></li>
+            <li class="active"><a href="#buy" class="btn btn-info btn-lg">Buy</a></li>
+        </ol>
+</div>
+
+    <div class="table-responsive">
+
+		
+		<table class="table" >
+    ...
+ 
+        <tr>
+            
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+			<th>Remove</th>
+			<th></th>
+        </tr>
+        <tr ng-repeat="item in purchase">
+            <td><select   ng-model="item" ng-options="c.name for c in products" ><option value="" >{{item.name}} <option></select> </td>           
+            <td><input type="number" ng-model="item.quantity" ng-required class="input-mini" min=0></td>
+            <td  ng-required class="input-mini ">{{item.price}}</td>
+            <td>{{item.quantity * item.price | currency}}</td>
+         <td>
+                <a href ng:click="removeItem($index)"><span class="glyphicon glyphicon-trash btn-danger"></span></a>
+            </td>  
+		
+        </tr>
+        <tr>
+            <td><a href="#home"  class="btn btn-active">add item</a></td>
+            <td></td>
+            <td>Total:</td>
+            <td>{{total() | currency}}</td>
+        </tr>
+    </table>
+	
+	<td><a href="#buy"  class="btn btn-primary">Back</a></td>
+	<td><a href="#confirm" ng-click="purchaseItem()" class="btn btn-success">Purchase</a></td>
+</div>
+</div>

@@ -1,0 +1,20 @@
+<div ng-controller="confirm">
+
+<div class="row">
+        <ol class="btn-group ">
+            <li><a href="#home" class="btn btn-primary btn-lg"><strong class="fa fa-home fa-lg "></strong></a></li>
+			<li><a href="#buy" class="btn btn-info btn-lg">Buy</a></li>
+            <li class="active"><a href="#confirm" class="btn btn-success btn-lg">Confirm</a></li>
+         </ol>
+</div>
+
+
+  
+<div class="jumbotron"> <h2>The order was successful</h2>
+ <h2>We appreciate your recent purchase of <ul ng-repeat="p in purchase"> <li>{{p.quantity}}</li> <li>{{p.name}}</li></ul>.<h2>
+
+<h3><mark>Your Confirmation number is {{id}}</mark><h3>
+
+
+</div>
+</div>

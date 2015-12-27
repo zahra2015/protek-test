@@ -1,0 +1,30 @@
+  <div ng-controller="home">
+
+
+
+
+
+
+<div class="row">
+        
+        <ol class="btn-group btn-breadcrumb">
+            <li class="active"><a href="#home" class="btn btn-primary btn-lg"><strong class="fa fa-home fa-lg "></strong></a></li>
+		
+        </ol>
+</div>
+
+
+<div class="row list" ng-repeat="p in products | filter:search ">
+		<div class="col-ms-12 col-md-4"><img src="{{p.image}}" alt="Product 1"></div>
+		<div class="col-ms-12 col-md-8">
+		 <h2>{{p.name}}</h2>
+		 <h3>{{p.description}}</h3>
+		 <span>Unit price: {{p.price | currency}}</span> </br>
+		 <input type="number" min=0 ng-model="p.quantity">
+		 <button  ng-click="addCart($index)" >Add to Cart</button>
+		
+		</div>
+		
+</div>
+
+</div>
